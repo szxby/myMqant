@@ -4,13 +4,14 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/liangdas/mqant/gate"
-	"github.com/liangdas/mqant/log"
-	"github.com/liangdas/mqant/module"
-	"github.com/liangdas/mqant/rpc/util"
-	"github.com/pkg/errors"
 	"net/url"
 	"time"
+
+	"github.com/pkg/errors"
+	"github.com/szxby/myMqant/gate"
+	"github.com/szxby/myMqant/log"
+	"github.com/szxby/myMqant/module"
+	argsutil "github.com/szxby/myMqant/rpc/util"
 )
 
 // FSelector 服务节点选择函数，可以自定义服务筛选规则
@@ -139,7 +140,7 @@ func (u *URIRoute) OnRoute(session gate.Session, topic string, msg []byte) (bool
 	}
 
 	//默认参数
-	if len(msg)>0&&msg[0] == '{' && msg[len(msg)-1] == '}' {
+	if len(msg) > 0 && msg[0] == '{' && msg[len(msg)-1] == '}' {
 		//尝试解析为json为map
 		var obj interface{} // var obj map[string]interface{}
 		err := json.Unmarshal(msg, &obj)

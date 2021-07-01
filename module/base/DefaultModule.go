@@ -16,11 +16,12 @@
 package basemodule
 
 import (
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/log"
-	"github.com/liangdas/mqant/module"
 	"runtime"
 	"sync"
+
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/log"
+	"github.com/szxby/myMqant/module"
 )
 
 // DefaultModule 模块结构

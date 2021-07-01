@@ -1,4 +1,4 @@
-module github.com/liangdas/mqant
+module github.com/szxby/myMqant
 
 go 1.12
 

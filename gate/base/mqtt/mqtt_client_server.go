@@ -18,10 +18,11 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/network"
 	"math"
 	"sync"
+
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/network"
 )
 
 var notAlive = errors.New("Connection was dead")

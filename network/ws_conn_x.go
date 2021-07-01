@@ -16,12 +16,13 @@
 package network
 
 import (
-	"github.com/liangdas/mqant/utils/ip"
-	"golang.org/x/net/websocket"
 	"io"
 	"net"
 	"sync"
 	"time"
+
+	iptool "github.com/szxby/myMqant/utils/ip"
+	"golang.org/x/net/websocket"
 )
 
 // Addr is an implementation of net.Addr for WebSocket.

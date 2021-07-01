@@ -17,11 +17,12 @@ package module
 
 import (
 	"context"
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/registry"
-	"github.com/liangdas/mqant/rpc"
-	"github.com/liangdas/mqant/selector"
+
 	"github.com/nats-io/nats.go"
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/registry"
+	mqrpc "github.com/szxby/myMqant/rpc"
+	"github.com/szxby/myMqant/selector"
 )
 
 // ProtocolMarshal 数据包装

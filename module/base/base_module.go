@@ -18,17 +18,18 @@ package basemodule
 import (
 	"context"
 	"fmt"
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/log"
-	"github.com/liangdas/mqant/module"
-	"github.com/liangdas/mqant/rpc"
-	"github.com/liangdas/mqant/rpc/pb"
-	"github.com/liangdas/mqant/selector"
-	"github.com/liangdas/mqant/server"
-	"github.com/liangdas/mqant/service"
-	"github.com/liangdas/mqant/utils"
-	"github.com/pkg/errors"
 	"os"
+
+	"github.com/pkg/errors"
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/log"
+	"github.com/szxby/myMqant/module"
+	mqrpc "github.com/szxby/myMqant/rpc"
+	rpcpb "github.com/szxby/myMqant/rpc/pb"
+	"github.com/szxby/myMqant/selector"
+	"github.com/szxby/myMqant/server"
+	"github.com/szxby/myMqant/service"
+	mqanttools "github.com/szxby/myMqant/utils"
 )
 
 // BaseModule 默认的RPCModule实现

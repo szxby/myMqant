@@ -17,9 +17,10 @@ package basemodule
 
 import (
 	"fmt"
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/log"
-	"github.com/liangdas/mqant/module"
+
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/log"
+	"github.com/szxby/myMqant/module"
 )
 
 // NewModuleManager 新建模块管理器

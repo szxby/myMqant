@@ -1,12 +1,13 @@
 package module
 
 import (
-	"github.com/liangdas/mqant/registry"
-	"github.com/liangdas/mqant/rpc"
-	"github.com/liangdas/mqant/rpc/pb"
-	"github.com/liangdas/mqant/selector"
-	"github.com/nats-io/nats.go"
 	"time"
+
+	"github.com/nats-io/nats.go"
+	"github.com/szxby/myMqant/registry"
+	mqrpc "github.com/szxby/myMqant/rpc"
+	rpcpb "github.com/szxby/myMqant/rpc/pb"
+	"github.com/szxby/myMqant/selector"
 )
 
 // Option 配置项

@@ -1,7 +1,8 @@
 package mock
 
-import ()
-import "github.com/liangdas/mqant/registry"
+import (
+	"github.com/szxby/myMqant/registry"
+)
 
 func addNodes(old, neu []*registry.Node) []*registry.Node {
 	for _, n := range neu {

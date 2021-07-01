@@ -4,10 +4,11 @@
 package modules
 
 import (
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/module"
-	"github.com/liangdas/mqant/module/modules/timer"
 	"time"
+
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/module"
+	timewheel "github.com/szxby/myMqant/module/modules/timer"
 )
 
 var TimerModule = func() module.Module {
@@ -27,7 +28,7 @@ func (m *Timer) GetType() string {
 func (m *Timer) OnInit(app module.App, settings *conf.ModuleSettings) {
 	timewheel.SetTimeWheel(timewheel.New(10*time.Millisecond, 36))
 	// 时间轮使用方式
-	//import "github.com/liangdas/mqant/module/modules/timer"
+	//import "github.com/szxby/myMqant/module/modules/timer"
 	//执行过的定时器会自动被删除
 	//timewheel.GetTimeWheel().AddTimer(66 * time.Millisecond , nil,self.Update)
 	//

@@ -16,8 +16,9 @@
 package gate
 
 import (
-	"github.com/liangdas/mqant/server"
 	"time"
+
+	"github.com/szxby/myMqant/server"
 )
 
 //Option 网关配置项

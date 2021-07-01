@@ -1,7 +1,8 @@
 package mock
 
-import ()
-import "github.com/liangdas/mqant/registry"
+import (
+	"github.com/szxby/myMqant/registry"
+)
 
 type mockRegistry struct {
 	Services map[string][]*registry.Service

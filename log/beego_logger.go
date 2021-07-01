@@ -18,7 +18,8 @@ package log
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/liangdas/mqant/log/beego"
+
+	logs "github.com/szxby/myMqant/log/beego"
 )
 
 //NewBeegoLogger beego

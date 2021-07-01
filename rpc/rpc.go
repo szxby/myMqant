@@ -17,8 +17,9 @@ package mqrpc
 
 import (
 	"context"
-	"github.com/liangdas/mqant/rpc/pb"
 	"reflect"
+
+	rpcpb "github.com/szxby/myMqant/rpc/pb"
 )
 
 // FunctionInfo handler接口信息

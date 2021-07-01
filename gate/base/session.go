@@ -20,12 +20,12 @@ import (
 	"strconv"
 	"sync"
 
+	"github.com/szxby/myMqant/gate"
+	"github.com/szxby/myMqant/log"
+	"github.com/szxby/myMqant/module"
+	mqrpc "github.com/szxby/myMqant/rpc"
+	mqanttools "github.com/szxby/myMqant/utils"
 	"google.golang.org/protobuf/proto"
-	"github.com/liangdas/mqant/gate"
-	"github.com/liangdas/mqant/log"
-	"github.com/liangdas/mqant/module"
-	"github.com/liangdas/mqant/rpc"
-	"github.com/liangdas/mqant/utils"
 )
 
 type sessionagent struct {

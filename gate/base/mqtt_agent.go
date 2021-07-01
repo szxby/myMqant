@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/gate"
-	"github.com/liangdas/mqant/gate/base/mqtt"
-	"github.com/liangdas/mqant/log"
-	"github.com/liangdas/mqant/module"
-	"github.com/liangdas/mqant/network"
-	argsutil "github.com/liangdas/mqant/rpc/util"
-	mqanttools "github.com/liangdas/mqant/utils"
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/gate"
+	"github.com/szxby/myMqant/gate/base/mqtt"
+	"github.com/szxby/myMqant/log"
+	"github.com/szxby/myMqant/module"
+	"github.com/szxby/myMqant/network"
+	argsutil "github.com/szxby/myMqant/rpc/util"
+	mqanttools "github.com/szxby/myMqant/utils"
 )
 
 //type resultInfo struct {

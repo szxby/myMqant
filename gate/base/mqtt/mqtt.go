@@ -19,31 +19,32 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/liangdas/mqant/log"
 	"io"
+
+	"github.com/szxby/myMqant/log"
 )
 
 const (
 	Rserved = iota
-	CONNECT  //1
-	CONNACK  //2
+	CONNECT //1
+	CONNACK //2
 
-	PUBLISH  //3
-	PUBACK   //4
-	PUBREC   //5
-	PUBREL   //6
-	PUBCOMP  //7
+	PUBLISH //3
+	PUBACK  //4
+	PUBREC  //5
+	PUBREL  //6
+	PUBCOMP //7
 
-	SUBSCRIBE  //8
-	SUBACK     //9
+	SUBSCRIBE //8
+	SUBACK    //9
 
-	UNSUBSCRIBE  //10
-	UNSUBACK     //11
+	UNSUBSCRIBE //10
+	UNSUBACK    //11
 
-	PINGREQ   //12
-	PINGRESP  //13
+	PINGREQ  //12
+	PINGRESP //13
 
-	DISCONNECT  //14
+	DISCONNECT //14
 )
 
 var null_string = ""

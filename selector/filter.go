@@ -1,7 +1,8 @@
 package selector
 
-import ()
-import "github.com/liangdas/mqant/registry"
+import (
+	"github.com/szxby/myMqant/registry"
+)
 
 // FilterEndpoint is an endpoint based Select Filter which will
 // only return services with the endpoint specified.

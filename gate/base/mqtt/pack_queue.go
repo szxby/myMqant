@@ -18,11 +18,12 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"github.com/liangdas/mqant/conf"
-	"github.com/liangdas/mqant/network"
 	"runtime"
 	"sync"
 	"time"
+
+	"github.com/szxby/myMqant/conf"
+	"github.com/szxby/myMqant/network"
 )
 
 // Tcp write queue

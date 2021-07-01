@@ -3,12 +3,13 @@ package httpgateway
 
 import (
 	"context"
-	"github.com/liangdas/mqant/httpgateway/api"
-	"github.com/liangdas/mqant/httpgateway/errors"
-	"github.com/liangdas/mqant/httpgateway/proto"
-	"github.com/liangdas/mqant/module"
-	"github.com/liangdas/mqant/rpc"
 	"net/http"
+
+	httpgatewayapi "github.com/szxby/myMqant/httpgateway/api"
+	"github.com/szxby/myMqant/httpgateway/errors"
+	go_api "github.com/szxby/myMqant/httpgateway/proto"
+	"github.com/szxby/myMqant/module"
+	mqrpc "github.com/szxby/myMqant/rpc"
 )
 
 //APIHandler 网关handler
