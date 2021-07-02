@@ -218,22 +218,24 @@ func (age *agent) OnRecover(pack *mqtt.Pack) {
 		pub := pack.GetVariable().(*mqtt.Publish)
 		age.toResult(age, *pub.GetTopic(), nil, err.Error())
 	} else {
-		pub := pack.GetVariable().(*mqtt.Publish)
-		topic := *pub.GetTopic()
-		uu, err := url.Parse(topic)
-		if err != nil {
-			return
+		pub, ok := pack.GetVariable().(*mqtt.Publish)
+		if ok {
+			topic := *pub.GetTopic()
+			uu, err := url.Parse(topic)
+			if err != nil {
+				return
+			}
+			m, err := url.ParseQuery(uu.RawQuery)
+			if err != nil {
+				return
+			}
+			// no need return recover
+			if _, ok := m["msg_id"]; !ok {
+				age.recoverworker(pack)
+				return
+			}
 		}
-		m, err := url.ParseQuery(uu.RawQuery)
-		if err != nil {
-			return
-		}
-		// no need return recover
-		if _, ok := m["msg_id"]; !ok {
-			age.recoverworker(pack)
-		} else {
-			go age.recoverworker(pack)
-		}
+		go age.recoverworker(pack)
 	}
 }
 
